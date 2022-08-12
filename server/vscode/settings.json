@@ -1,0 +1,32 @@
+{
+    "editor.inlineSuggest.enabled": true,
+
+    "git.path": "/home/jve4pt/.yogi_utils/git-2.37.1/compiled/libexec/git-core/git", 
+
+    "git.confirmSync": false,
+    "git.autofetch": true,
+
+    "terminal.integrated.profiles.linux": {
+            "zsh": {
+                "path": "/home/jve4pt/.yogi_utils/zsh/local/bin/zsh"
+        }
+    },
+
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.shellIntegration.enabled": true,
+
+
+    "git.decorations.enabled": true,
+
+    "workbench.colorCustomizations": {
+        "gitDecoration.modifiedResourceForeground": "#4EB071",
+        "gitDecoration.deletedResourceForeground": "#DA6771",
+        "gitDecoration.untrackedResourceForeground": "#399EF4",
+        "gitDecoration.conflictingResourceForeground": "#fff099",
+        "gitDecoration.ignoredResourceForeground": "#535a6b",
+    },
+    
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.decorations.badges": true, 
+
+}
