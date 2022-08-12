@@ -1,0 +1,37 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "redhat.telemetry.enabled": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "explorer.confirmDragAndDrop": false,
+    "remote.SSH.remotePlatform": {
+        "rivanna.hpc.virginia.edu": "linux"
+    }
+}
