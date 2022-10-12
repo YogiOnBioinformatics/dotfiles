@@ -107,7 +107,11 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# update path to get newest version of tools
+#locale variables
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# update path variable to get newest version of tools
 
 # fzf
 export PATH=/home/jve4pt/.yogi_utils/fzf/bin/fzf:$PATH
