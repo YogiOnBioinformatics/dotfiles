@@ -127,7 +127,7 @@ export PATH=/home/jve4pt/.yogi_utils/curl-7.83.1/compiled/lib:$PATH
 
 # Basic Aliases
 alias ls='ls --color'
-alias grep='grep --color'
+alias grep='grep -i --color'
 alias la='ls -lha --color --time-style=long-iso'
 alias rm='rm -i'
 alias cp='cp -i'
