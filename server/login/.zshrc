@@ -135,8 +135,8 @@ alias ....='cd ../../../../'
 alias bat='/home/jve4pt/.yogi_utils/bat-v0.21.0-x86_64-unknown-linux-musl/bat --style=full --force-colorization'
 alias hyperfine='/home/jve4pt/.yogi_utils/hyperfine-v1.14.0-x86_64-unknown-linux-musl/hyperfine'
 
-# load python module 
-module load python/.3.8.8
+# module load python/.3.8.8
+module load anaconda/2020.11-py3.8
 
 # SFTP Alias 
 alias sftp='sftp -oServerAliveInterval=300 -oServerAliveCountMax=3'
