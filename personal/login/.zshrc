@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git F-Sy-H)
+plugins=(git F-Sy-H git-open)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -142,7 +142,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 # Basic Aliases
 alias ls='ls --color'
-alias grep='grep --color'
+alias grep='grep -i --color'
 alias la='ls -lha --color --time-style=long-iso'
 alias rm='rm -i'
 alias cp='cp -i'
@@ -151,8 +151,13 @@ alias .='cd ..'
 alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
+
+# bat
 alias bat='/home/yraghav/.yogi_utils/bat-v0.21.0-x86_64-unknown-linux-musl/bat --style=full --force-colorization'
+# hyperfine
 alias hyperfine='/home/yraghav/.yogi_utils/hyperfine-v1.14.0-x86_64-unknown-linux-gnu/hyperfine'
+# exa 
+alias exa='/home/yraghav/.yogi_utils/exa_binary/exa'
 
 # source fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -165,7 +170,7 @@ alias python3="/mnt/c/Users/yragh/AppData/Local/Programs/Python/Python310/python
 alias code="'/mnt/c/Users/yragh/AppData/Local/Programs/Microsoft VS Code/bin/code'"
 
 # SSH & SFTP Aliases
-alias rivanna="ssh -Y jve4pt@rivanna.hpc.virginia.edu"
+alias rivanna="ssh -Y jve4pt@rivanna1.hpc.virginia.edu"
 alias sftp='sftp -oServerAliveInterval=300 -oServerAliveCountMax=3'
 alias sftpRivanna="sftp -oServerAliveInterval=300 -oServerAliveCountMax=3 jve4pt@rivanna.hpc.virginia.edu"
 
@@ -176,6 +181,8 @@ cd() {
 
 # append LD Library paths to get tmux working
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/yraghav/.yogi_utils/libevent/build/lib
+# add rust binaries to path 
+export PATH=/home/yraghav/.cargo/bin:$PATH
 
 # tmux Aliases 
 alias tn='tmux new -s' 
