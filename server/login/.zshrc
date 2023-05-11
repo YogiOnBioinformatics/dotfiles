@@ -107,11 +107,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#locale variables
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
-# update path variable to get newest version of tools
+# update path to get newest version of tools
 
 # fzf
 export PATH=/home/jve4pt/.yogi_utils/fzf/bin/fzf:$PATH
@@ -124,6 +120,22 @@ export PATH=/home/jve4pt/.yogi_utils/tmux-3.3a/compiled/bin:$PATH
 # curl
 export PATH=/home/jve4pt/.yogi_utils/curl-7.83.1/compiled/bin:$PATH
 export PATH=/home/jve4pt/.yogi_utils/curl-7.83.1/compiled/lib:$PATH
+# rust 
+export PATH=/home/jve4pt/.cargo/bin:$PATH
+# bedops 
+export PATH=/home/jve4pt/.yogi_utils/bedops-2.4.41/bin:$PATH
+# sra tools 
+export PATH=/home/jve4pt/.yogi_utils/sratoolkit.3.0.5-ubuntu64/bin:$PATH
+
+# zoxide
+export PATH=/home/jve4pt/.local/bin:$PATH
+eval "$(zoxide init zsh)"
+export _ZO_DATA_DIR="/home/jve4pt/.zoxide_database"
+export _ZO_ECHO=1
+
+#locale variables
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Basic Aliases
 alias ls='ls --color'
@@ -136,8 +148,11 @@ alias .='cd ..'
 alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
+
+# Aliases to Programs
 alias bat='/home/jve4pt/.yogi_utils/bat-v0.21.0-x86_64-unknown-linux-musl/bat --style=full --force-colorization'
 alias hyperfine='/home/jve4pt/.yogi_utils/hyperfine-v1.14.0-x86_64-unknown-linux-musl/hyperfine'
+alias bedtools='/home/jve4pt/.yogi_utils/bedtools-2.30.0/bedtools'
 
 # module load python/.3.8.8
 module load anaconda/2020.11-py3.8
